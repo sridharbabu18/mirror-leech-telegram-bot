@@ -252,7 +252,7 @@ class MirrorListener:
                     share_url = short_url(share_url)
                     buttons.buildbutton("⚡ Index Link", share_url)
                     if VIEW_LINK:
-                        share_urls = f'{INDEX_URL}/{url_path}?a=view'
+                        share_urls = f'{INDEX_URL}/{url_path}#Intent;package=com.mxtech.videoplayer.ad;S.title=@TroopOriginals;end'
                         share_urls = short_url(share_urls)
                         buttons.buildbutton("🌐 View Link", share_urls)
             if BUTTON_FOUR_NAME is not None and BUTTON_FOUR_URL is not None:
